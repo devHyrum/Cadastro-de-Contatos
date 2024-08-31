@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cadastro de Contatos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="d-flex align-items-center">
+        <img class="" src="./assets/logo_alphacode.png" alt="logoHeader">
+        <h1 class="text-center">Cadastro de Contatos</h1>
+    </header>
+
+    <div class="container">
+        <form id="contact-form" class="mt-5">
+            <div class="row">
+                <div class="mb-3 col-sm">
+                  <label for="nome" class="form-label">Nome completo</label>
+                  <input type="text" class="form-control custom-input" id="nome" placeholder="Ex.: Letícia Pacheco dos Santos">
+                </div>
+                <div class="mb-3 col-sm">
+                  <label for="data-nascimento" class="form-label">Data de nascimento</label>
+                  <input type="date" class="form-control custom-input" id="data-nascimento">
+                </div>
+              </div>
+            <div class="row">
+                <div class="mb-3 col-sm">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ex.: leticia@gmail.com">
+                </div>
+                <div class="mb-3 col-sm">
+                    <label for="profissao" class="form-label">Profissão</label>
+                    <input type="text" class="form-control" id="profissao" placeholder="Ex.: Desenvolvedora Web">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-sm">
+                    <label for="telefone" class="form-label">Telefone para contato (Whatsapp)</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="Ex.: (11) 4033-2019">
+                </div>
+                <div class="mb-3 col-sm">
+                    <label for="celular" class="form-label">Celular para contato</label>
+                    <input type="tel" class="form-control" id="celular" placeholder="Ex.: (11) 98493-2039">
+                </div>       
+            </div>
+
+            <div class="row">
+                <div class="form-check mb-3 col-sm">
+                    <input class="form-check-input" type="checkbox" id="notificacoes-wsp">
+                    <label class="form-check-label" for="notificacoes-wsp">
+                        Número de celular possui Whatsapp
+                    </label>
+                </div>
+                <div class="form-check mb-3 col-sm">
+                    <input class="form-check-input" type="checkbox" id="notificacoes-sms">
+                    <label class="form-check-label" for="notificacoes-sms">
+                        Enviar notificações por SMS
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-check mb-3 col-sm">
+                    <input class="form-check-input" type="checkbox" id="notificacoes-email">
+                    <label class="form-check-label" for="notificacoes-email">
+                        Enviar notificações por E-mail
+                    </label>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn" id="cadastrarButton">Cadastrar contato</button>
+
+            </div>
+        </form>
+
+        <!-- Tabela de contatos cadastrados -->
+        <div class="mt-5">
+            <table class="table table-striped table-responsive">
+                <thead class="table-header-custom">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data de nascimento</th>
+                        <th>Celular</th>
+                        <th>E-mail</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="contacts-list">
+                    <!-- Os contatos serão adicionados aqui via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <footer class="d-flex align-items-center justify-content-around p-4">
+        <div class="fs-5">Termos | Políticas</div>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="fs-5 pe-2 ">© Copyright 2022 | Desenvolvido por</div>
+            <img src="./assets/logo_rodape_alphacode.png" alt="logo_rodape_alphacode" id="logoFooter">
+        </div>
+        <div class="fs-5">©Alphacode IT Solutions 2022</div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+header{
+    background: #078ed0;
+    h1 {
+        color: white;
+    }
+}
+
+footer {
+    background-color: #078ed0;
+    color: white;
+    #logoFooter{
+        width: 17%;
+        height: 17%;
+    }
+}
+#cadastrarButton{
+    background-color: #53B6E6;
+    color: white;
+    &:hover{
+        background-color: #078ed0;
+    }
+}
+.row{
+    color: #9E9E9E;
+}
+/* .table-header-custom {
+    background-color: #078ED0;
+    color: #fff;
+}
+thead {
+    background-color: #078ED0;
+    color: #fff;
+} */
+.custom-input {
+    border: none; /* Remove todas as bordas */
+    border-bottom: 2px solid black; /* Adiciona borda inferior cinza */
+    background-color: transparent; /* Fundo transparente */
+    box-shadow: none;
+  }
+  .form-control{
+    border: none;
+    box-shadow: none;
+  }
+  
+  .custom-input:focus {
+    border-bottom: 2px solid #078ED0; /* Aumenta a espessura da borda e muda a cor ao focar */
+  }
+  
+  .custom-input:focus ~ label {
+    color: #078ED0; /* Muda a cor do label ao focar no input */
+  }
