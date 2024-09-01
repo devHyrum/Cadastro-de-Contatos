@@ -1,4 +1,5 @@
 # Cadastro de Contatos
+![desktopDemo](./public/desktopDemo.png)
 
 Este é um projeto de **Cadastro de Contatos** que permite ao usuário adicionar informações como nome completo, data de nascimento, e-mail, profissão, telefone e celular. A aplicação foi desenvolvida com **HTML5**, **CSS**, **JavaScript** e **Bootstrap**, garantindo um layout responsivo e uma boa experiência do usuário.
 
