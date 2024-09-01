@@ -4,11 +4,10 @@ Este é um projeto de **Cadastro de Contatos** que permite ao usuário adicionar
 
 ## Funcionalidades
 
-- Formulário para adicionar novos contatos.
 - Armazenamento de dados como nome, data de nascimento, e-mail e telefone.
-- Tabela que lista todos os contatos cadastrados.
-- Sistema para enviar notificações via SMS e E-mail.
-- Design responsivo utilizando Bootstrap.
+- Excluir contatos através de um modal de confirmação.
+- Editar contatos (a funcionalidade de edição está preparada, mas o código para edição precisa ser adicionado).
+- Design responsivo para telas móveis e desktop.
   
 ## Tecnologias Utilizadas
 
@@ -26,7 +25,6 @@ Este é um projeto de **Cadastro de Contatos** que permite ao usuário adicionar
 2. Abra o arquivo index.html em seu navegador preferido.
 
 ## Como Usar
-1. Preencha o formulário com as informações do contato, como nome, data de nascimento, e-mail, etc.
-2. Clique no botão Cadastrar contato para salvar as informações.
-3. Os contatos cadastrados aparecerão automaticamente na tabela abaixo do formulário.
-4. Você pode marcar as opções para enviar notificações por SMS ou E-mail durante o cadastro.
+1. **Adicionar Contato**: Preencha o formulário na parte superior da página com as informações do contato e clique em "Cadastrar".
+2. **Excluir Contato**: Clique no ícone de "Excluir" ao lado do contato que deseja remover. Confirme a exclusão no modal que aparece.
+3. **Editar Contato**: A funcionalidade de edição está preparada, mas você precisa adicionar a lógica correspondente.
